@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 
-require "sacartists"
+require_relative "../lib/sacartists"
