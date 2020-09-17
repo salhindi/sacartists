@@ -1,6 +1,7 @@
-require "sacartists/version"
+require_relative "sacartists/version"
 
-module Sacartists
-  class Error < StandardError; end
-  # Your code goes here...
-end
+
+# module Sacartists
+#   class Error < StandardError; end
+#   # Your code goes here...
+# end
