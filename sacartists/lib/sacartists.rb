@@ -1,4 +1,5 @@
 require_relative "sacartists/version"
+require_relative "sacartists/cli"
 
 
 # module Sacartists
