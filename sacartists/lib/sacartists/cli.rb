@@ -10,5 +10,10 @@ module SacArtists
     #  list artists 
     #  user chooses artist 
   end
+  
+  def get_career_options
+    # scrape
+    @careers =[]
+    
 end
 end
