@@ -1,6 +1,7 @@
 require 'pry'
 class Sacartists::CLI
     attr_accessor :careers
+    
   def call 
     puts 'Welcome to the Sacramento Artists app!'
     # binding.pry
@@ -18,6 +19,7 @@ class Sacartists::CLI
   end
   
   def get_user_career
+    # binding.pry
   #   # list careers
      @careers.each do |c|
        puts "#{c}"

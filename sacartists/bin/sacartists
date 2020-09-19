@@ -2,9 +2,10 @@
 
 require_relative "../lib/environment"
 
-Sacartists::CLI.new.call
-Sacartists::CLI.new.get_career_options
-Sacartists::CLI.new.get_user_career
+instance = Sacartists::CLI.new
+instance.call
+instance.get_career_options
+instance.get_user_career
 
 
 
