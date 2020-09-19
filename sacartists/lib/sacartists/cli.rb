@@ -13,7 +13,13 @@ module SacArtists
   
   def get_career_options
     # scrape
-    @careers =[]
+    @careers = ["Art", "Administration", "Writing", "video"]
+  end
+  
+  def get_user_career
+    # list careers
+    @careers.each_with_index{|i, c| "#{i + 1}"."#{c}"}
+  end
     
 end
 end
