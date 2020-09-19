@@ -7,3 +7,4 @@ SacArtists::CLI.new.get_career_options
 SacArtists::CLI.new.get_user_career
 
 
+

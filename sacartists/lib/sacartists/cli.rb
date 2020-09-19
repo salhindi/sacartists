@@ -1,6 +1,7 @@
 require 'pry'
 module SacArtists
   class CLI
+    attr_accessor :careers
   def call 
     puts 'Welcome to the Sacramento Artists app!'
     # binding.pry
@@ -13,16 +14,17 @@ module SacArtists
   
   def get_career_options
     # scrape
-    @careers= ["Art", "Administration", "Writing", "video"]
+    @careers = ["art", "drawing", "painting", "writing"] 
+  puts @careers
   end
   
   def get_user_career
-    # list careers
-    @careers.each_with_index do |i, c| 
-      puts "#{i +1}.#{c}"
+  #   # list careers
+     @careers.each do |c|
+       puts "#{c}"
+     end
       
-    end
-  end
+     end
     
 end
 end
