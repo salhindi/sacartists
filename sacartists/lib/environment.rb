@@ -1,5 +1,5 @@
 require 'nokogiri'
-require 'pry'
+
 
 require_relative "./sacartists/version"
 require_relative "./sacartists/cli"
