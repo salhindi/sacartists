@@ -15,15 +15,16 @@ class Sacartists::CLI
   def get_career_options
     # scrape
     @careers = ["art", "drawing", "painting", "writing"] 
-  puts @careers
   end
   
-  def get_user_career
-    # binding.pry
-  #   # list careers
-     @careers.each do |c|
-       puts "#{c}"
+  def list_careers
+    puts "Choose the type of artist you're looking for!"
+     @careers.each_with_index do |c, i|
+       puts "#{i + 1}.#{c}"
      end
+     
+     def get_user_careers
+       chosen_career = gets.strip
       
      end
     
