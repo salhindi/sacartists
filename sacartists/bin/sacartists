@@ -2,9 +2,9 @@
 
 require_relative "../lib/environment"
 
-SacArtists::CLI.new.call
-SacArtists::CLI.new.get_career_options
-SacArtists::CLI.new.get_user_career
+Sacartists::CLI.new.call
+Sacartists::CLI.new.get_career_options
+Sacartists::CLI.new.get_user_career
 
 
 

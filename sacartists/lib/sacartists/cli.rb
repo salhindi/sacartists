@@ -1,6 +1,5 @@
 require 'pry'
-module SacArtists
-  class CLI
+class Sacartists::CLI
     attr_accessor :careers
   def call 
     puts 'Welcome to the Sacramento Artists app!'
@@ -26,5 +25,4 @@ module SacArtists
       
      end
     
-end
 end
