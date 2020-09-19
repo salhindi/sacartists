@@ -22,10 +22,10 @@ class Sacartists::CLI
      @careers.each_with_index do |c, i|
        puts "#{i + 1}.#{c}"
      end
+   end
      
      def get_user_careers
        chosen_career = gets.strip
-      
      end
     
 end
