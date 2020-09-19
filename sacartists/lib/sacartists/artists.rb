@@ -1,4 +1,4 @@
 module SacArtists
-  class Scraper
+  class Artists 
 end
 end
