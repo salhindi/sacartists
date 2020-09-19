@@ -6,7 +6,7 @@ require 'pry'
 
 
 
-# module Sacartists
-#   class Error < StandardError; end
-#   # Your code goes here...
-# end
+module Sacartists
+  class Error < StandardError; end
+  # Your code goes here...
+end
