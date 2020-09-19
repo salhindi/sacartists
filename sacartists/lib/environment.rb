@@ -1,8 +1,9 @@
-require 'nokogiri'
-
-
 require_relative "./sacartists/version"
 require_relative "./sacartists/cli"
+
+require 'pry'
+
+
 
 
 # module Sacartists

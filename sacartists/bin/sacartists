@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative "../lib/sacartists"
+require_relative "../lib/environment"
 
 SacArtists::CLI.new.call
 
