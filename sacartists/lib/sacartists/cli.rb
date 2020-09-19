@@ -1,5 +1,7 @@
-class SacArtists::CLI
+module SacArtists
+  class CLI
   def call 
-    puts 'Welcome!'
+    puts 'Welcome to the Sacramento Artists!'
   end
+end
 end
