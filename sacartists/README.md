@@ -1,8 +1,4 @@
-# Sacartists
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sacartists`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Hi! The Sacartist gem is a directory of artists in Sacramento! You can find all the artists associated with a certain talent based in the Sacramento County Area. It's outputting data from www.sacramento365.com to a user.
 
 ## Installation
 
@@ -22,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+List out artists associated with specific talents in the Sacramento County area.
 
 ## Development
 
