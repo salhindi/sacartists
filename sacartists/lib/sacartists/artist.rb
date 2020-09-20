@@ -25,8 +25,4 @@ class Sacartists::Artist
     @career.artists << self unless @career.artists.include?(self)
   end
   
-  def get_careers
-    Sacartists::Scraper.scrape_artists(career) if @artists.empty?
-  end
- 
 end
