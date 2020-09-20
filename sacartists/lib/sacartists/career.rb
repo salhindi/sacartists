@@ -15,7 +15,7 @@ class Sacartists::Career
   end
   
   def list_artists
-     Sacartists::Scraper.scrape_artists if @artists.empty?
+     Sacartists::Scraper.scrape_artists(self) if @artists.empty?
   end
   
 end
