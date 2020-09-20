@@ -4,8 +4,10 @@ require_relative "../lib/environment"
 
 instance = Sacartists::CLI.new
 instance.call
+instance.get_career_options
 instance.list_careers
-instance.get_user_career
+
+
 
 
 
