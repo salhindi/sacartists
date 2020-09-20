@@ -10,7 +10,7 @@ class Sacartists::Scraper
     end
     
     def self.scrape_artists(career)
-      
+      Sacartists::Artist.new("Jaren Fifield", career)
     end
     
 end

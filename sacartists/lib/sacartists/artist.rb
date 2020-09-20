@@ -9,11 +9,16 @@ class Sacartists::Artist
   def initialize(name, career)
     @name= name
     @career = career
+    add_to_career
     @@all << self
   end
   
   def self.all
     @@all
+  end
+  
+  def add_to_career
+    @career.artists << self unless @career.artists.include?(self)
   end
  
 end
