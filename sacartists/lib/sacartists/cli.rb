@@ -1,6 +1,5 @@
 require 'pry'
 class Sacartists::CLI
-    attr_accessor :name
     
    def call 
       puts 'Welcome to the Sacramento Artists app!'
@@ -14,7 +13,6 @@ class Sacartists::CLI
       
       # puts "To leave the app, type-in 'exit'"
     end
-    goodbye
   end
   
   
@@ -65,12 +63,22 @@ class Sacartists::CLI
       career.artists.each_with_index{|i, artist|
        puts "#{i + 1}. #{artist.name}"} 
      end
-     get_artist_career(artist)
    end
    
-   def get_artist_career(artist)
-     puts "Choose an artist to learn more about them."
-     input = gets.strip
-     artist = career.artists[input.to_i - 1]
+  # def get_artist_info(artist)
+  #   puts "Choose an artist to learn more about them."
+  #   input = gets.strip
+  #   artist = career.artists[input.to_i - 1]
+  # end
+   
+   def new_search
+     puts "Would you like to see other types of artists? If not, type 'exit' to exit or hit any key to see more careers."
+     @input = gets.strip
+   end
+   
+   def good_bye
+     puts "See ya later!"
+   end
+ end
      
-end
+
