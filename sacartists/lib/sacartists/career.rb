@@ -1,10 +1,11 @@
 class Sacartists::Career
-  attr_accessor :name, :artists
+  attr_accessor :name, :artists, :id
   
   @@all = [] 
   
-  def initialize(name)
+  def initialize(name, id)
     @name= name
+    @id = id
     @artists= []
     @@all << self 
   end

@@ -10,8 +10,8 @@ class Sacartists::Scraper
       end
     end
     
-    def scrape_artists(career)
-      url = "https://www.sacramento365.com/artist/?keyword&term=#{careerid}&city=0&zip=0&onepage=1&view=list"
+    def self.scrape_artists(career)
+      url = "https://www.sacramento365.com/artist/?keyword&term=#{career.id}&city=0&zip=0&onepage=1&view=list"
       doc = Nokogiri::HTML(open(url))
     artists = doc.css(".search-info")
     artists.each do |a|

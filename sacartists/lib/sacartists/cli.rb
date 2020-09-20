@@ -57,7 +57,7 @@ class Sacartists::CLI
     def show_artists_for(chosen_career)
       # binding.pry
       career = @careers[chosen_career -1]
-      artists = list_artists
+      career.list_artists
       # career.get_artists.each {|artist| artist.career == career} 
       puts "Here is a list of artists that are #{career.name}."
       career.artists.each_with_index{|i, artist|
