@@ -3,7 +3,7 @@ class Sacartists::Career
   
   @@all = [] 
   
-  def initialize(name)
+  def initialize(name, id)
     @name= name
     @id = id
     @artists= []

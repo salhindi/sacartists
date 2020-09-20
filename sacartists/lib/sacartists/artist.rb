@@ -17,9 +17,9 @@ class Sacartists::Artist
     @@all
   end
   
-  # def self.career(career)
-  #   @@all.select{|artist| artist.career == career}
-  # end
+  def self.career(career)
+     @@all.select{|artist| artist.career == career}
+  end
   
   def add_to_career
     @career.artists << self unless @career.artists.include?(self)
