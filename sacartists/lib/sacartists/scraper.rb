@@ -17,7 +17,6 @@ class Sacartists::Scraper
       
     artists = doc.css(".search-info")
     artists.each do |a|
-        career = a.css(".career").text
         name = a.css(".ev-tt").text
         Sacartists::Artist.new(name, career)
       end
