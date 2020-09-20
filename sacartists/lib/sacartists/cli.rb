@@ -32,8 +32,7 @@ class Sacartists::CLI
       career = @careers[chosen_career -1]
       puts "Here is a list of artists that are #{career}."
       # Sacartists::Artist.all.each{|artist| puts artist.name}
-      #get_career_choice
-    # binding.pry
+      #gets_career_choice
     end
   
     
