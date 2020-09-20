@@ -50,7 +50,7 @@ class Sacartists::CLI
   
     
     def show_artists_for(chosen_career)
-      binding.pry
+      # binding.pry
       career = @careers[chosen_career -1]
       career.get_artists 
       # puts "Here is a list of artists that are #{career.name}."
