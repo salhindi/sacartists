@@ -11,7 +11,6 @@ class Sacartists::CLI
   
   def get_career_options
     @careers = Sacartists::Careers.all
-    # binding.pry
   end
   
   def list_careers

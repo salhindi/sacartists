@@ -9,6 +9,7 @@ class Sacartists::Careers
   end
   
   def self.all 
+    Sacartists::Scraper.scrape_careers if @@all.empty?
     @@all
   end
   
