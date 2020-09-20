@@ -6,7 +6,7 @@ instance = Sacartists::CLI.new
 instance.call
 instance.get_career_options
 instance.list_careers
-instance.valid_input
+instance.valid_input(input=2)
 
 
 

@@ -24,12 +24,15 @@ class Sacartists::CLI
      
     def get_user_careers
       chosen_career = gets.strip
+      binding.pry
       if valid_input(chosen_career)
-    end
+        puts "true"
     end
     
-    def valid_input(input, data)
+    
+    def valid_input(input)
       input <= @careers.length && input < 0 
+      end
     end
     
 end
