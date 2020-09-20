@@ -1,11 +1,12 @@
 class Sacartists::Careers
+  attr_accessor :name 
   
-  @@all = ["Writers", "Painters", "Guitarists", "Drummers", "Sculptor"] 
+  @@all = [] 
   
-  # def initialize(name)
-  #   @name= name 
-  #   @@all << self 
-  # end
+  def initialize(name)
+    @name= name 
+    @@all << self 
+  end
   
   def self.all 
     @@all
