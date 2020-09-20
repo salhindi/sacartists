@@ -6,7 +6,7 @@ class Sacartists::CLI
     puts 'Welcome to the Sacramento Artists app!'
     get_career_options
     list_careers
-    get_user_career
+    get_career_choice
   end
   
   def get_career_options
@@ -19,7 +19,7 @@ class Sacartists::CLI
      end
    end
      
-    def get_user_career
+    def get_career_choice
       chosen_career = gets.strip.to_i
       show_artists_for(chosen_career) if valid_input(chosen_career, @careers)
     end
@@ -31,7 +31,9 @@ class Sacartists::CLI
     def show_artists_for(chosen_career)
       career = @careers[chosen_career]
       puts "Here are artists for #{career}"
-    binding.pry
+      # Sacartists::Artist.all.each{|artist| puts artist.name}
+      #get_career_choice
+    # binding.pry
     end
   
     
