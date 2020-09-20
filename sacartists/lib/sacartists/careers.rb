@@ -1,11 +1,11 @@
 class Sacartists::Careers
-  attr_accessor :name 
-  attr_writer :artists
+  attr_accessor :name, :artist
   
   @@all = [] 
   
   def initialize(name)
-    @name= name 
+    @name= name
+    @artist= artist
     @@all << self 
   end
   
@@ -15,7 +15,7 @@ class Sacartists::Careers
   end
   
   def artists
-    Sacartists::Scraper.scrape_artists if @@all.empty?
+    Sacartists::Scraper.scrape_artists(self) if @artists.empty?
     @artists 
   end
   

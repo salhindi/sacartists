@@ -1,13 +1,14 @@
 class Sacartists::Artists
-  attr_accessor :name
-  attr_writer :artists
+  attr_accessor :name, :careers
   
+  # career has many artists 
+  # artists belong to some careers
   
   @@all =[]
   
   def initialize(name, career)
     @name= name
-    @careers = []
+    @careers = careers
     @@all << self
   end
   

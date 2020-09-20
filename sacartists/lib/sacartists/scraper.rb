@@ -7,6 +7,10 @@ class Sacartists::Scraper
       name = c.text
       Sacartists::Careers.new(name)
     end
-  
     end
+    
+    def self.scrape_artists(careers)
+      Sacartists::Careers.new("Jaren Fifield", career)
+    end
+    
 end
