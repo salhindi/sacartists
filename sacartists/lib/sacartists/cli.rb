@@ -4,15 +4,18 @@ class Sacartists::CLI
     
    def call 
       puts 'Welcome to the Sacramento Artists app!'
-      get_career_options
+      # get_career_options
       
-      list_careers
-      puts "Type in the number of the talent you're looking for."
-      get_career_choice
+      # list_careers
+      # puts "Type in the number of the talent you're looking for."
+      # get_career_choice
       
-      puts "To leave the app, type-in 'exit'"
+      # puts "To leave the app, type-in 'exit'"
     end
   end
+  
+  def menu
+    puts ""
 
   
     def get_career_options
