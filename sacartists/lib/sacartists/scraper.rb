@@ -21,7 +21,6 @@ class Sacartists::Scraper
       name.each do |r| 
         puts r.css('span.ev-tt').text
       end
-      career
     end
     end
   end

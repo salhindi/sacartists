@@ -18,14 +18,19 @@ class Sacartists::CLI
     puts "What type of artist would you like listed?"
     puts "Type in the number associated with the career."
     get_career_choice
-    puts "Type in the name of the artist you'd like to learn more about."
+
     
-    input=gets.strip
+    input=gets.strip.to_i
     
-    if input == "exit" 
-      puts "Goodbye!"
-    end
+    show_artists_for(input)
+    
+    puts "Type in the name of the artist you'd like to learn more about!"
+    
+    if input == "exit"
+        puts "Goodbye!"
+      end
   end
+
 
   
     def get_career_options
