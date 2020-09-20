@@ -1,7 +1,7 @@
 require_relative "./sacartists/version"
 require_relative "./sacartists/cli"
-require_relative "./sacartists/careers"
-require_relative "./sacartists/artists"
+require_relative "./sacartists/career"
+require_relative "./sacartists/artist"
 require_relative "./sacartists/scraper"
 
 require 'nokogiri'

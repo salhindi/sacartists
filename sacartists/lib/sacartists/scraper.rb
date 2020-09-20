@@ -5,12 +5,12 @@ class Sacartists::Scraper
 
     careers.each do |c|
       name = c.text
-      Sacartists::Careers.new(name)
+      Sacartists::Career.new(name)
     end
     end
     
-    def self.scrape_artists(careers)
-      Sacartists::Careers.new("Jaren Fifield", career)
+    def self.scrape_artists(career)
+      
     end
     
 end

@@ -3,10 +3,3 @@
 require_relative "../lib/environment"
 
 Sacartists::CLI.new.call
-
-
-
-
-
-
-

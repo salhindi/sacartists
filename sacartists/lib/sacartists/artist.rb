@@ -1,5 +1,5 @@
-class Sacartists::Artists
-  attr_accessor :name, :careers
+class Sacartists::Artist
+  attr_accessor :name, :career
   
   # career has many artists 
   # artists belong to some careers
@@ -8,7 +8,7 @@ class Sacartists::Artists
   
   def initialize(name, career)
     @name= name
-    @careers = careers
+    @career = career
     @@all << self
   end
   

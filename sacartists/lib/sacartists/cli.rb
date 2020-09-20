@@ -1,6 +1,6 @@
 require 'pry'
 class Sacartists::CLI
-    attr_accessor :careers, :name
+    attr_accessor :name
     
   def call 
     puts 'Welcome to the Sacramento Artists app!'
@@ -10,10 +10,11 @@ class Sacartists::CLI
   end
   
   def get_career_options
-    @careers = Sacartists::Careers.all
+    @careers = Sacartists::Career.all
   end
   
   def list_careers
+    puts "Choose a talent."
      @careers.each_with_index do |c, i|
        puts "#{i +1}.#{c.name}"
      end
@@ -31,9 +32,10 @@ class Sacartists::CLI
     def show_artists_for(chosen_career)
       career = @careers[chosen_career -1]
       artists = career.artists 
-      puts "Here is a list of artists that are #{career}."
+      puts "Here is a list of artists that are #{career.name}."
       # Sacartists::Artist.all.each{|artist| puts artist.name}
       #gets_career_choice
+
     end
   
     
