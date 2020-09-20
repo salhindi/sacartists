@@ -22,8 +22,14 @@ class Sacartists::CLI
      end
    end
      
-    # def get_user_careers
-    #   chosen_career = gets.strip
-    # end
+    def get_user_careers
+      chosen_career = gets.strip
+      if valid_input(chosen_career)
+    end
+    end
+    
+    def valid_input(input, data)
+      input <= @careers.length && input < 0 
+    end
     
 end
