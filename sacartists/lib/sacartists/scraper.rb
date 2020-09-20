@@ -18,7 +18,7 @@ class Sacartists::Scraper
     artists.each do |a|
         career = a.css(".career").text
         name = a.css(".ev-tt").text
-        Sacartists::Career.new(name, id)
+        Sacartists::Artist.new(name, career)
       end
     end
     
