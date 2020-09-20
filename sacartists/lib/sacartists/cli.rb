@@ -17,22 +17,21 @@ class Sacartists::CLI
   end
   
   def list_careers
-     @careers.each_with_index do |c, i|
-       puts "#{i + 1}.#{c}"
+     @careers.each_with_index(1) do |c, i|
+       puts "#{i}.#{c}"
      end
    end
      
     def get_user_careers
       chosen_career = gets.strip
       binding.pry
-      if valid_input(chosen_career)
-        puts "true"
+      # if valid_input(chosen_career)
+      #   puts "true"
     end
     
     
-    def valid_input(input)
-      input <= @careers.length && input < 0 
-      end
+    def valid_input(input, data)
+      input.to_i <= data.length && input.to_i < 0 
     end
     
 end
