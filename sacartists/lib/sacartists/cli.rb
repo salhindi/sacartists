@@ -21,7 +21,10 @@ class Sacartists::CLI
     case input
     when input > 0
       get_career_choice
+    when exit 
+      puts "Goodbye!"
     end
+  end
 
   
     def get_career_options
