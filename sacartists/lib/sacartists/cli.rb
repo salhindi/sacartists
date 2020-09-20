@@ -17,6 +17,7 @@ class Sacartists::CLI
   def menu
     puts "What type of artist would you like listed?"
     puts "Type in the number associated with the career."
+    input = gets.strip
 
   
     def get_career_options
