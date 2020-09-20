@@ -53,14 +53,14 @@ class Sacartists::CLI
     def valid_input(input, data)
       input.to_i <= data.length && input.to_i > 0 
     end
-  
     
     def show_artists_for(chosen_career)
       # binding.pry
       career = @careers[chosen_career -1]
-      career.get_artists.each {|artist| artist.career == career} 
+      artists = list_artists
+      # career.get_artists.each {|artist| artist.career == career} 
       puts "Here is a list of artists that are #{career.name}."
-      careeer.artists.each_with_index{|i, artist|
+      career.artists.each_with_index{|i, artist|
        puts "#{i + 1}. #{artist.name}"} 
      end
 end
