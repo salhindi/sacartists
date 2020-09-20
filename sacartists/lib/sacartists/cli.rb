@@ -4,11 +4,11 @@ class Sacartists::CLI
     
    def call 
       puts 'Welcome to the Sacramento Artists app!'
-      # get_career_options
-      
-      # list_careers
+      get_career_options
+      list_careers
       # puts "Type in the number of the talent you're looking for."
-      # get_career_choice
+      
+      menu
       
       # puts "To leave the app, type-in 'exit'"
     end
@@ -17,11 +17,12 @@ class Sacartists::CLI
   def menu
     puts "What type of artist would you like listed?"
     puts "Type in the number associated with the career."
-    input = gets.strip
-    case input
-    when input > 0
-      get_career_choice
-    when exit 
+    get_career_choice
+    puts "Type in the name of the artist you'd like to learn more about."
+    
+    input=gets.strip
+    
+    if input == "exit" 
       puts "Goodbye!"
     end
   end
@@ -49,6 +50,7 @@ class Sacartists::CLI
   
     
     def show_artists_for(chosen_career)
+      binding.pry
       career = @careers[chosen_career -1]
       career.get_artists 
       # puts "Here is a list of artists that are #{career.name}."
