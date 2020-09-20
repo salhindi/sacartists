@@ -4,6 +4,8 @@ require_relative "./sacartists/careers"
 require_relative "./sacartists/artists"
 require_relative "./sacartists/scraper"
 
+require 'nokogiri'
+require 'open-uri'
 require 'pry'
 
 

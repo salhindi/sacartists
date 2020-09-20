@@ -10,7 +10,6 @@ class Sacartists::CLI
   end
   
   def get_career_options
-    Sacartists::Careers.new("Muralists")
     @careers = Sacartists::Careers.all
     # binding.pry
   end
