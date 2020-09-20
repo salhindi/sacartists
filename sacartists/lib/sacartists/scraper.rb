@@ -6,7 +6,8 @@ class Sacartists::Scraper
 
       careers.each do |c|
         name = c.text
-      Sacartists::Career.new(name)
+        id = c.attr("value")
+      Sacartists::Career.new(name, id)
       end
     end
     
@@ -15,8 +16,9 @@ class Sacartists::Scraper
       doc = Nokogiri::HTML(open(url))
     artists = doc.css(".search-info")
     artists.each do |a|
-        career = search.css(".career").text
-        name = search.css(".ev-tt").text
+        career = a.css(".career").text
+        name = a.css(".ev-tt").text
+        Sacartists::Career.new(name, id)
       end
     end
     
