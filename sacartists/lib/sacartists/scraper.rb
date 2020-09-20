@@ -14,8 +14,8 @@ class Sacartists::Scraper
     
     def self.scrape_artists(career)
        doc = Nokogiri::HTML(open("https://www.sacramento365.com/artist/?view&onepage=1&type"))
-      name = doc.css("div.search-bkl li")
-      career = doc.css("div.search-bkl li")
+       artist = doc.css(".search-info").each do |artist|
+      artists.career = artist.css(".career").text
       career.each do |r|
         puts r.css("div.career").text
       name.each do |r| 
