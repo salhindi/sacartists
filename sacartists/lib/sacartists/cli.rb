@@ -18,6 +18,10 @@ class Sacartists::CLI
     puts "What type of artist would you like listed?"
     puts "Type in the number associated with the career."
     input = gets.strip
+    case input
+    when input > 0
+      get_career_choice
+    end
 
   
     def get_career_options
