@@ -10,7 +10,7 @@ class Sacartists::CLI
   end
   
   def get_career_options
-    @careers = ["art", "drawing", "painting", "writing"] 
+    @careers = Sacartists::Careers.all
   end
   
   def list_careers
@@ -29,8 +29,8 @@ class Sacartists::CLI
     end
     
     def show_artists_for(chosen_career)
-      career = @careers[chosen_career]
-      puts "Here's artists who specialize in #{career}."
+      career = @careers[chosen_career -1]
+      puts "Here is a list of artists that are #{career}."
       # Sacartists::Artist.all.each{|artist| puts artist.name}
       #get_career_choice
     # binding.pry

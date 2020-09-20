@@ -1,5 +1,6 @@
 require_relative "./sacartists/version"
 require_relative "./sacartists/cli"
+require_relative "./sacartists/careers"
 require_relative "./sacartists/artists"
 require_relative "./sacartists/scraper"
 
