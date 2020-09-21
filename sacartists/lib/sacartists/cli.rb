@@ -1,5 +1,7 @@
 require 'pry'
 class Sacartists::CLI
+  
+  # put greeting
     
    def call 
       puts 'Welcome to the Sacramento Artists app!'
@@ -13,13 +15,14 @@ class Sacartists::CLI
     good_bye
   end
   
- 
+
     def get_career_options
       @careers = Sacartists::Career.all
     end
   
     def list_careers
       puts "What talent are you looking for?"
+      puts "Type in the number associated with the talent."
       @careers.each_with_index do |c, i|
       puts "#{i +1}.#{c.name}"
     end
