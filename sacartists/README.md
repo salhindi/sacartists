@@ -4,17 +4,9 @@ Hi! The Sacartist gem is a directory of artists in Sacramento! You can find all 
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'sacartists'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sacartists
+-clone the repository
+-run 'bundle install'
+-run ruby bin/sacartists
 
 ## Usage
 
