@@ -19,4 +19,8 @@ class Sacartists::Career
      Sacartists::Scraper.scrape_artists(self) if @artists.empty?
   end
   
+  def self.find_by_name(name)
+    @@all.find{|career| career.name == name}
+  end
+   
 end
